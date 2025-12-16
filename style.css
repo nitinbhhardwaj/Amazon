@@ -220,7 +220,7 @@ ul a{
     align-items:center;
 }
 
-.foot-panel3 .logo {
+ .logo {
      background-image: url("amazon.png");
     background-size: cover;
     height: 50px;
