@@ -13,15 +13,17 @@
             <div class="nav-logo border">
                 <div class="logo"></div>
             </div>
-
+            <div id="clock"></div>
             <div class="nav-address border">
                 <p class="add-first"> Deliver to</p>
             <div class="add-icon">
                 <i class="fa-solid fa-location-dot"></i>
-                <p class="add-second">India</p>
+               <p class="add-second" id="country">India</p>
                 </div>
             </div>
-
+            <button id="voiceBtn">
+    🎤
+</button>
             <div class="nav-search">
                 <select class="search-select">
                     <option>All</option>
@@ -42,9 +44,10 @@
                 <p class="nav-second">& Orders</p>
             </div>
             <div class="nav-cart border">
-                <i class="fa-solid fa-cart-shopping"></i>
-               Cart
-            </div>
+    <i class="fa-solid fa-cart-shopping"></i>
+    Cart (<span id="cartCount">0</span>)
+</div>
+<button class="wishlist-btn">❤</button>
                     </div>
 
             <div class="panel">
@@ -67,6 +70,7 @@
 
 
     <div class="hero-section">
+        <div id="offerTimer"></div>
         <div class="hero-msg">
             <p>You are on amazon.com.You can also shop on Amazon India for millions of products with fast <a href="https://www.amazon.com">Click here to go to amazon.in</a></p>
         </div>
@@ -78,6 +82,7 @@
              <h2>Shop holiday gift guides</h2>
             <div class="box-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/HolidayGiftGuide_2025/Fuji_SingleImageCard_2x._SY608_CB797652893_.jpg');"></div>
             <p>Explore holiday gifts</p>
+            <button class="cart-btn">Add to Cart</button>
            </div>
         </div>
         <div class="box">
@@ -85,6 +90,7 @@
             <h2>Shop Fashion for less</h2>
             <div class="box-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_2x._SY232_CB624172947_.jpg');"></div>
             <p>See all deals</p>
+            <button class="cart-btn">Add to Cart</button>
            </div>
         </div>
         <div class="box">
@@ -92,6 +98,7 @@
             <h2>New home arrivals under $50</h2>
             <div class="box-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_315_HP_NewArrivals_QuadCard_D_01_2x._SY232_CB555960040_.jpg');"></div>
             <p>Shop the latest from Home</p>
+            <button class="cart-btn">Add to Cart</button>
            </div>
         </div>
         <div class="box">
@@ -99,6 +106,7 @@
             <h2>Shop gifts by category</h2>
             <div class="box-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/HOL/Homepage/QC/DQC/HOL25-Peak_10620_HP_DQC_Gifting_Electronics_V1_2x_372x232._SY232_CB797242024_.jpg');"></div>
             <p>Discover more for holiday</p>
+            <button class="cart-btn">Add to Cart</button>
            </div>
         </div>
 
@@ -107,6 +115,7 @@
             <h2>Find gifts for everyone</h2>
             <div class="box-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/HOL/Homepage/QC/DQC/HOL25-Peak_10576_HP_DQC_Gifting_For_Her_V2._SY232_CB797617953_.jpg');"></div>
             <p>For her</p>
+            <button class="cart-btn">Add to Cart</button>
            </div>
         </div>
          <div class="box">
@@ -114,6 +123,7 @@
             <h2>Shop holiday collections</h2>
             <div class="box-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/HOL/Homepage/QC/DQC/HOL25-Peak_10641_HP_DQC_Gifting_New_Arrivals_V1_2x_372x232._SY232_CB797242001_.jpg');"></div>
             <p>Shop Holiday collections</p>
+            <button class="cart-btn">Add to Cart</button>
            </div>
         </div>
          <div class="box">
@@ -121,6 +131,7 @@
             <h2>Pre-loved luxury gifts</h2>
             <div class="box-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2025/LuxuryStores/Q1_HomepageAssets/JewelryQuadCards_LS_Rolex_372x232._SY232_CB788692196_.jpg');"></div>
             <p>Shop all pre-loved jewelry</p>
+            <button class="cart-btn">Add to Cart</button>
            </div>
         </div>
          <div class="box">
@@ -128,6 +139,7 @@
             <h2>Elevated pre-loved gifts</h2>
             <div class="box-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2025/LuxuryStores/Q1_HomepageAssets/Desktop_Quad_card_7._SY232_CB777854549_.jpg');"></div>
             <p>Shop all pre-loved handbags</p>
+            <button class="cart-btn">Add to Cart</button>
            </div>
         </div>
 
@@ -136,6 +148,7 @@
             <h2>Deals on fashion</h2>
             <div class="box-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HOL/GW/QuadCard/HS2/HOL24_ADHOC_1999_DQC_12-Day-of-Deals_Generic_372x232_EN._SY232_CB540609611_.jpg');"></div>
             <p>Shop all fashion deals</p>
+            <button class="cart-btn">Add to Cart</button>
            </div>
         </div>
           <div class="box">
@@ -143,6 +156,7 @@
             <h2>Most-loved watches</h2>
             <div class="box-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/BoyWatches_2x._SY232_CB564394432_.jpg');"></div>
             <p>Discover more</p>
+            <button class="cart-btn">Add to Cart</button>
            </div>
         </div>
           <div class="box">
@@ -150,6 +164,7 @@
             <h2>Wireless Tech</h2>
             <div class="box-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/Headphone_2x._SY232_CB566164844_.jpg');"></div>
             <p>Discover more</p>
+            <button class="cart-btn">Add to Cart</button>
            </div>
         </div>
           <div class="box">
@@ -157,14 +172,15 @@
             <h2>Level up your gaming</h2>
             <div class="box-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_SW_GamingWeek_Sony_v2_2x._SY232_CB558844445_.jpg');"></div>
             <p>Shop the latest in gaming</p>
+            <button class="cart-btn">Add to Cart</button>
            </div>
         </div>
     </div>
 
     <footer>
-        <div class="foot-panel1">
-            Back to Top
-        </div>
+        <div class="foot-panel1" id="backToTop">
+    Back to Top
+</div>
 
         <div class="foot-panel2">
             <ul><p>Get to know Us
@@ -220,5 +236,14 @@
             </div>
         </div>
     </footer>
+    <div id="productModal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p>Special Offer Available</p>
+    </div>
+</div>
+<div id="toast"></div>
+    <script src="script.js"></script>
 </body>
 </html>
